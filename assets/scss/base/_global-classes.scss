@@ -1,0 +1,36 @@
+.ibg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	> img {
+		display: none !important;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	@include breakpoint(medium) {
+		padding: 0 8px;
+	}
+}
+
+.wrapper {
+	background-color: $color-white-3;
+	overflow: hidden;
+}
+
+.title-aside {
+	font-size: 18px;
+	font-weight: 600;
+	color: $color-primary;
+	margin-bottom: 12px;
+
+	@include breakpoint(medium) {
+		text-align: center;
+	}
+}

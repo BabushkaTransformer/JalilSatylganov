@@ -1,0 +1,107 @@
+.header {
+	z-index: 1000;
+
+	&__banner {
+		height: 250px;
+		object-fit: cover;
+	}
+}
+
+// nav-menu::::::::::::::::::::::::::::::;;
+.nav-menu {
+	position: relative;
+	background-color: $color-primary;
+
+	&__links {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+
+		@include breakpoint(medium) {
+			display: none;
+			position: absolute;
+			top: 100%;
+			width: 100%;
+			flex-direction: column;
+			background-color: $color-primary;
+			z-index: 999;
+		}
+	}
+
+	&__burger {
+		display: none;
+		position: relative;
+		line-height: 45px;
+		min-width: 30px;
+		margin: 0 20px;
+
+		@include breakpoint(medium) {
+			display: block;
+		}
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			width: 30px;
+		}
+	}
+
+	&__link {
+		position: relative;
+
+		@include breakpoint(medium) {
+			border-bottom: 1px dotted $color-white;
+		}
+
+		&:hover {
+			ul {
+				display: flex;
+				opacity: 1;
+				visibility: 1;
+			}
+		}
+		a {
+			display: block;
+			padding: 0 16px;
+			height: 45px;
+			line-height: 45px;
+			color: $color-white;
+			font-weight: 500;
+			&:hover {
+				background: rgba(255, 255, 255, 0.05);
+			}
+		}
+		ul {
+			display: none;
+			flex-direction: column;
+			position: absolute;
+			width: 225px;
+			top: 100%;
+			left: 0;
+			opacity: 0;
+			visibility: 0;
+			background-color: $color-light-blue;
+			transition: opacity 100ms;
+			z-index: 100;
+
+			@include breakpoint(medium) {
+				display: flex;
+				position: relative;
+				width: 100%;
+				opacity: 1;
+				visibility: 1;
+				background-color: inherit;
+				padding-left: 20px;
+
+				a {
+					color: $color-white-3;
+				}
+			}
+			a {
+				padding: 8px 16px;
+				height: auto;
+				line-height: normal;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+			}
+		}
+	}
+}
