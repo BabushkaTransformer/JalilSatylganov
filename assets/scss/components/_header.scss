@@ -2,8 +2,45 @@
 	z-index: 1000;
 
 	&__banner {
+		display: flex;
+
+		align-items: flex-end;
 		height: 250px;
 		object-fit: cover;
+	}
+	&__logo {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		width: 100%;
+
+		img {
+			position: absolute;
+			left: 50%;
+			bottom: 40px;
+			transform: translateX(-50%);
+
+			width: 135px;
+			height: 135px;
+
+			z-index: 100;
+		}
+		span {
+			color: $color-primary;
+			padding: 10px;
+			background: rgba(0, 0, 0, 0.6);
+			color: #fff;
+			z-index: 50;
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			font-size: 24px;
+
+			@include breakpoint(small) {
+				font-size: 18px;
+			}
+		}
 	}
 }
 

@@ -38,6 +38,9 @@
 	}
 	&__content {
 		width: 50%;
+		&--big {
+			width: 75%;
+		}
 		@include breakpoint(large) {
 			width: 65%;
 		}
@@ -51,6 +54,10 @@
 	padding: 0 5px;
 	background-color: $color-primary;
 	border-radius: 5px;
+
+	@include breakpoint(medium) {
+		display: none;
+	}
 
 	&__inner {
 		display: flex;
@@ -104,7 +111,7 @@
 		}
 	}
 	&__image {
-		width: 80px;
+		max-width: 80px;
 		height: 70px;
 
 		img {
@@ -114,7 +121,7 @@
 		}
 	}
 	&__desc {
-		margin-left: 20px;
+		margin-left: 15px;
 		text-transform: lowercase;
 
 		span {
@@ -189,6 +196,7 @@
 	width: 100%;
 	background-color: #fff;
 	border-radius: 8px;
+	overflow: hidden;
 
 	&__head {
 		padding: 8px 15px;
@@ -215,9 +223,13 @@
 	&__bottom {
 		padding: 8px 15px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 
+		span {
+			margin-bottom: 5px;
+		}
 		a {
 			background-color: $color-primary;
 			border-radius: 15px;
@@ -353,18 +365,8 @@
 // company-logo:::::::::::::::::::::::::::::::::::::::::::::::::::
 .company-logo {
 	margin-top: 80px;
-	&__slide {
-		img {
-			opacity: 0.5;
-			transition: all 0.3s ease;
-
-			&:hover {
-				opacity: 1;
-			}
-		}
-	}
+	width: 100%;
 }
-
 // about:::::::::::::::::::::::::::::::::::::::::::::::::::
 .about {
 	background-color: $color-white;
