@@ -6,10 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 
+		<!-- css -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
 		/>
+		<link rel="stylesheet" href="assets/css/plugin/jquery.fancybox.min.css" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
@@ -23,12 +25,9 @@
 						/>
 						<div class="header__logo">
 							<a href="index.html">
-								<img
-									src="assets/img/5f86570f-07b2-4915-91c2-d805f9f82806-removebg-preview.png"
-									alt=""
-								/>
+								<img src="assets/img/logo.png" alt="" />
 							</a>
-							<span>СШ. им. Жалила Садыкова</span>
+							<span>СШ. им. Жоробек Сатылганова</span>
 						</div>
 					</div>
 					<!-- /.header__banner -->
@@ -42,33 +41,18 @@
 						<ul class="nav-menu__links">
 							<li class="nav-menu__link">
 								<a href="index.html">Мектеп</a>
-								<ul>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-								</ul>
 							</li>
 							<li class="nav-menu__link">
 								<a href="news.html">Жанылыктар</a>
-								<ul>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-								</ul>
 							</li>
 
 							<li class="nav-menu__link">
-								<a href="article.html">Камкордук</a>
-								<ul>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-									<li><a href="#">Мектеп жонундо маалымат</a></li>
-								</ul>
+								<a href="achievements.html">Ийгиликтер</a>
 							</li>
-							<li class="nav-menu__link"><a href="staff.html">Галерея</a></li>
+							<li class="nav-menu__link">
+								<a href="about.html">Мектеп жөнүндө</a>
+							</li>
+							<li class="nav-menu__link"><a href="gallery.html">Галерея</a></li>
 						</ul>
 					</nav>
 					<!-- /.nav-menu -->
@@ -81,29 +65,26 @@
 					<div class="links-block">
 						<ul class="links-block__inner">
 							<li class="links-block__list">
-								<a href="staff.html">Кызматкерлер</a>
+								<a href="administration.html">Администрация</a>
 							</li>
 							<li class="links-block__list">
 								<a href="employee.html">Директор</a>
 							</li>
 							<li class="links-block__list">
-								<a href="staff.html">Мугалимдер</a>
+								<a href="teachers.html">Мугалимдер коллективи</a>
 							</li>
 							<li class="links-block__list">
-								<a href="article.html">Ата-энелерге</a>
+								<a href="parents.html">Ата-энелер менен иштөө</a>
 							</li>
 							<li class="links-block__list">
-								<a href="news.html">Галерея</a>
-							</li>
-							<li class="links-block__list">
-								<a href="article.html">Школьная газета</a>
+								<a href="parlament.html">Мектеп парламенти</a>
 							</li>
 						</ul>
 					</div>
 					<!-- /.links-block -->
 
 					<div class="statistic">
-						<div class="title-aside">Мы в цифрах</div>
+						<div class="title-aside">Биз санда</div>
 						<div class="statistic__inner">
 							<div class="statistic__item">
 								<div class="statistic__image">
@@ -156,28 +137,16 @@
 					<!-- /.statistic -->
 
 					<div class="sidebar-carousel hidden-arrows">
-						<div class="title-aside">Сертификаты</div>
+						<div class="title-aside">Сертификаттар</div>
 						<div
 							class="sidebar-carousel__slides owl-carousel owl-theme"
 							id="certificates"
 						>
 							<div class="sidebar-carousel__slide">
-								<img
-									src="https://s1.1zoom.ru/big0/9/School_Stationery_English_Pencils_Ballpoint_pen_568795_1280x853.jpg"
-									alt=""
-								/>
+								<img src="assets/img/diploma/diploma.jpg" alt="" />
 							</div>
 							<div class="sidebar-carousel__slide">
-								<img
-									src="https://s1.1zoom.ru/big0/919/School_Notebooks_Pencils_Ballpoint_pen_562179_1365x1024.jpg"
-									alt=""
-								/>
-							</div>
-							<div class="sidebar-carousel__slide">
-								<img
-									src="https://s1.1zoom.ru/big0/480/School_Notebooks_Pencils_Ballpoint_pen_561232_1280x853.jpg"
-									alt=""
-								/>
+								<img src="assets/img/diploma/dimploma2.jpg" alt="" />
 							</div>
 						</div>
 					</div>
@@ -185,82 +154,164 @@
 				</aside>
 				<!-- /.page__sidebar -->
 				<section class="page__content page__content--big">
+					<div class="article">
+						<h1 class="article__title">Мектеп администрациясы</h1>
+					</div>
 					<div class="content-blocks">
 						<div class="content-blocks__item content-blocks__item--employee staff-card">
 							<div class="staff-card__img">
-								<a href="employee.html">
-									<img
-										src="https://njundubaeva.mektebim.kg/wp-content/uploads/sites/214/2021/02/mirlan-agay-373x500.jpg"
-										alt=""
-									/>
+								<a href="#">
+									<img src="assets/img/administration/admin.jpg" alt="" />
 								</a>
 							</div>
 							<div class="staff-card__desc">
-								<span>Маратов Тилек</span>
-								<a href="employee.html">подробнее</a>
+								<span>Нурдинов Эркинбек Сарбагышович </span>
+								<span><strong>Директор</strong></span>
 							</div>
 						</div>
 						<!-- /.content-blocks__item--employee -->
 						<div class="content-blocks__item content-blocks__item--employee staff-card">
 							<div class="staff-card__img">
-								<a href="employee.html">
-									<img
-										src="https://njundubaeva.mektebim.kg/wp-content/uploads/sites/214/2021/02/mirlan-agay-373x500.jpg"
-										alt=""
-									/>
+								<a href="#">
+									<img src="assets/img/administration/admin2.jpg" alt="" />
 								</a>
 							</div>
 							<div class="staff-card__desc">
-								<span>Маратов Тилек</span>
-								<a href="employee.html">подробнее</a>
+								<span>Орозалиев Кадырбек Муканбетович</span>
+								<span
+									><strong
+										>Окуу тарбия иштери боюнча директордун орун басары</strong
+									></span
+								>
 							</div>
 						</div>
 						<!-- /.content-blocks__item--employee -->
 						<div class="content-blocks__item content-blocks__item--employee staff-card">
 							<div class="staff-card__img">
-								<a href="employee.html">
-									<img
-										src="https://njundubaeva.mektebim.kg/wp-content/uploads/sites/214/2021/02/mirlan-agay-373x500.jpg"
-										alt=""
-									/>
+								<a href="#">
+									<img src="assets/img/administration/admin3.jpg" alt="" />
 								</a>
 							</div>
 							<div class="staff-card__desc">
-								<span>Маратов Тилек</span>
-								<a href="employee.html">подробнее</a>
+								<span>Эмил кызы Айзат</span>
+								<span
+									><strong
+										>Тарбия иштери боюнча директордун орун басары</strong
+									></span
+								>
 							</div>
 						</div>
 						<!-- /.content-blocks__item--employee -->
 						<div class="content-blocks__item content-blocks__item--employee staff-card">
 							<div class="staff-card__img">
-								<a href="employee.html">
-									<img
-										src="https://njundubaeva.mektebim.kg/wp-content/uploads/sites/214/2021/02/mirlan-agay-373x500.jpg"
-										alt=""
-									/>
+								<a href="#">
+									<img src="assets/img/administration/admin4.jpg" alt="" />
 								</a>
 							</div>
 							<div class="staff-card__desc">
-								<span>Маратов Тилек</span>
-								<a href="employee.html">подробнее</a>
+								<span>Бапинова Нурай Болотбековна</span>
+								<span><strong>Социалдык педагогу</strong></span>
 							</div>
 						</div>
 						<!-- /.content-blocks__item--employee -->
 						<div class="content-blocks__item content-blocks__item--employee staff-card">
 							<div class="staff-card__img">
-								<a href="employee.html">
-									<img
-										src="https://njundubaeva.mektebim.kg/wp-content/uploads/sites/214/2021/02/mirlan-agay-373x500.jpg"
-										alt=""
-									/>
+								<a href="#">
+									<img src="assets/img/administration/admin5.jpg" alt="" />
 								</a>
 							</div>
 							<div class="staff-card__desc">
-								<span>Маратов Тилек</span>
-								<a href="employee.html">подробнее</a>
+								<span>Кудайбергенов Асылбек Оморович</span>
+								<span><strong>Профсоюз уюмунун төрагасы</strong></span>
 							</div>
 						</div>
 						<!-- /.content-blocks__item--employee -->
+					</div>
+					<div class="article">
+						<h1 class="article__title">Мектеп жонундо маалымат.</h1>
+						<p class="article__text">
+							<strong>Педагогикалык коллектив:</strong> 38 педагог
+						</p>
+						<p class="article__text">
+							<strong>Класс-комплекттердин саны:</strong> 20 класс-комплект
+						</p>
+						<p class="article__text">
+							<strong>480 саат менен даярдоо классы:</strong> 2 класс
+						</p>
+						<p class="article__text"><strong>Окуучулардын саны:</strong> 605 окуучу</p>
+
+						<p class="article__text">
+							<strong> Усулдук бирикмелер: </strong>
+						</p>
+						<ul class="article__list">
+							<li>“Табигый” усулдук бирикмеси</li>
+							<li>“Лингвистика 1” усулдук бирикмеси</li>
+							<li>“Лингвистика 2 ”усулдук бирикмеси</li>
+							<li>“Социалдык технологиялык” усулдук бирикмеси</li>
+							<li>“Башталгыч класс” усулдук бирикмеси</li>
+						</ul>
+
+						<p class="article__text">
+							<strong>Ийримдер:</strong>
+						</p>
+						<ul class="article__list">
+							<li>“Интернет” информатика сабагы</li>
+							<li>“Бий”</li>
+							<li>“Интегралл” математика сабагы</li>
+							<li>“Шахмат”</li>
+							<li>“Англис тили”</li>
+						</ul>
+
+						<p class="article__text">
+							<strong>Спорт иштери:</strong>
+						</p>
+						<ul class="article__list">
+							<li>Футбол</li>
+							<li>Баскетбол</li>
+							<li>Волейбол</li>
+							<li>Шахмат</li>
+						</ul>
+
+						<p class="article__text">
+							<strong>Кызматташтык:</strong>
+						</p>
+						<ul class="article__list">
+							<li>билим берүү борборлору</li>
+							<li>«Кызыл жарым ай» коому</li>
+							<li>«Ыйык Ата-Журт» жаштар фонду</li>
+							<li>«Секом» билим берүү мекемеси</li>
+						</ul>
+
+						<p class="article__text">
+							<strong>Жалпы окуучулардын өздөштүрүүсү:</strong> 100%
+						</p>
+						<p class="article__text">
+							<strong>Жалпы окуучулардын билим сапаты:</strong> 53%
+						</p>
+						<br />
+						<p class="article__text">
+							<strong>Суммалык (чейректик) баа берүүнүн негизинде</strong>
+						</p>
+
+						<p class="article__text">
+							<strong>Предметтик олимпиадалар:</strong>
+						</p>
+						<ul class="article__list">
+							<li>шаардык</li>
+							<li>облустук</li>
+							<li>республикалык</li>
+							<li>эл аралык</li>
+						</ul>
+
+						<p class="article__text">
+							<strong>Окуу процессинин уюштурулушу:</strong>
+						</p>
+						<p class="article__text"><strong>Окуу күнү:</strong> 6 күндүк</p>
+						<p class="article__text"><strong>Смендүүлүгү:</strong> 2 смена</p>
+						<p class="article__text">
+							<strong>Убактысы:</strong> 1- смена 8-00дөн 13-00 чейин, 2-смена
+							13-30дан16-30 чейин
+						</p>
 					</div>
 				</section>
 			</div>
@@ -282,6 +333,7 @@
 		<!-- script -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script src="assets/js/plugin/jquery.fancybox.min.js"></script>
 		<script src="assets/js/script.js"></script>
 		<script src="assets/js/slider.js"></script>
 		<script src="assets/js/dynamicAdapt.js"></script>

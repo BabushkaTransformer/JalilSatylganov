@@ -6,11 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 
-		<!-- links -->
+		<!-- css -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
 		/>
+		<link rel="stylesheet" href="assets/css/plugin/jquery.fancybox.min.css" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
@@ -153,111 +154,61 @@
 				</aside>
 				<!-- /.page__sidebar -->
 				<section class="page__content page__content--big">
-					<div class="content-blocks">
-						<div class="content-blocks__item content-blocks__item--news card-news">
-							<div class="card-news__head">
-								<h3 class="card-news__title">Нооруз майрамыңыздар менен</h3>
-								<div class="card-news__text">
-									Мектеп директору Турсуналиев Тынчтыкбек Иманалиевич жалпы мектеп
-									жамаатын, окуучуларды, ата энелерди жана биздин социалдык
-									тармактардагы катталуучуларыбызды б…
-								</div>
-							</div>
-							<div class="card-news__image">
-								<img
-									src="https://st.depositphotos.com/1155723/1280/i/950/depositphotos_12809817-stock-photo-office-and-student-accessories-on.jpg"
-									alt=""
-								/>
-							</div>
-							<div class="card-news__bottom">
-								<span>12 мая 2020 год</span>
-								<a href="article.html">Читать далее</a>
-							</div>
-						</div>
-						<div class="content-blocks__item content-blocks__item--news card-news">
-							<div class="card-news__head">
-								<h3 class="card-news__title">Нооруз майрамыңыздар менен</h3>
-								<div class="card-news__text">
-									Мектеп директору Турсуналиев Тынчтыкбек Иманалиевич жалпы мектеп
-									жамаатын, окуучуларды, ата энелерди жана биздин социалдык
-									тармактардагы катталуучуларыбызды б…
-								</div>
-							</div>
-							<div class="card-news__image">
-								<img
-									src="https://st.depositphotos.com/1155723/1280/i/950/depositphotos_12809817-stock-photo-office-and-student-accessories-on.jpg"
-									alt=""
-								/>
-							</div>
-							<div class="card-news__bottom">
-								<span>12 мая 2020 год</span>
-								<a href="article.html">Читать далее</a>
-							</div>
-						</div>
-						<!-- /.content-blocks__item -->
-						<div class="content-blocks__item content-blocks__item--news card-news">
-							<div class="card-news__head">
-								<h3 class="card-news__title">Нооруз майрамыңыздар менен</h3>
-								<div class="card-news__text">
-									Мектеп директору Турсуналиев Тынчтыкбек Иманалиевич жалпы мектеп
-									жамаатын, окуучуларды, ата энелерди жана биздин социалдык
-									тармактардагы катталуучуларыбызды б…
-								</div>
-							</div>
-							<div class="card-news__image">
-								<img
-									src="https://st.depositphotos.com/1155723/1280/i/950/depositphotos_12809817-stock-photo-office-and-student-accessories-on.jpg"
-									alt=""
-								/>
-							</div>
-							<div class="card-news__bottom">
-								<span>12 мая 2020 год</span>
-								<a href="article.html">Читать далее</a>
-							</div>
-						</div>
-						<!-- /.content-blocks__item -->
-						<div class="content-blocks__item content-blocks__item--news card-news">
-							<div class="card-news__head">
-								<h3 class="card-news__title">Нооруз майрамыңыздар менен</h3>
-								<div class="card-news__text">
-									Мектеп директору Турсуналиев Тынчтыкбек Иманалиевич жалпы мектеп
-									жамаатын, окуучуларды, ата энелерди жана биздин социалдык
-									тармактардагы катталуучуларыбызды б…
-								</div>
-							</div>
-							<div class="card-news__image">
-								<img
-									src="https://st.depositphotos.com/1155723/1280/i/950/depositphotos_12809817-stock-photo-office-and-student-accessories-on.jpg"
-									alt=""
-								/>
-							</div>
-							<div class="card-news__bottom">
-								<span>12 мая 2020 год</span>
-								<a href="article.html">Читать далее</a>
-							</div>
-						</div>
-						<!-- /.content-blocks__item -->
-						<div class="content-blocks__item content-blocks__item--news card-news">
-							<div class="card-news__head">
-								<h3 class="card-news__title">Нооруз майрамыңыздар менен</h3>
-								<div class="card-news__text">
-									Мектеп директору Турсуналиев Тынчтыкбек Иманалиевич жалпы мектеп
-									жамаатын, окуучуларды, ата энелерди жана биздин социалдык
-									тармактардагы катталуучуларыбызды б…
-								</div>
-							</div>
-							<div class="card-news__image">
-								<img
-									src="https://st.depositphotos.com/1155723/1280/i/950/depositphotos_12809817-stock-photo-office-and-student-accessories-on.jpg"
-									alt=""
-								/>
-							</div>
-							<div class="card-news__bottom">
-								<span>12 мая 2020 год</span>
-								<a href="article.html">Читать далее</a>
-							</div>
-						</div>
-						<!-- /.content-blocks__item -->
+					<div class="article">
+						<h1 class="article__title">Ата-энелер менен иштөө</h1>
+
+						<p class="article__text">
+							Мектеп окуу — тарбия ишин жакшыртуу максатында ата-энелер менен үч
+							тараптуу келишим түзүп иштейт. Ата -энелерди мектептин турмушуна жана
+							окуу тарбия ишине тереңирээк тартуу максатында ата-энелер комитети
+							түзүлөн
+						</p>
+						<p class="article__text">
+							<strong
+								>Нарын облусундагы Ак талаа районундагы Тоголок Молдо айылындагы
+								Ж.Сатылганов атындагы орто мектебинин 2019-2020-окуу жылы үчүн жалпы
+								ата-энелер чогулушунун 22.09.2017-жылдагы №1-токтомунун негизинде
+								шайланган ата-энелер комитетинин төрагасынын жана мүчөлөрүнүн курамы
+								төмөндөгүдөй:
+							</strong>
+						</p>
+						<table class="article__table">
+							<tr>
+								<th>№</th>
+								<th>Ф.И.О.</th>
+								<th>Иштеген жери</th>
+								<th>Жашаган жери</th>
+								<th>Орду</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Рашитов Улан</td>
+								<td>“Элет капитал” кредиттис оюз</td>
+								<td>М.Рыскулова 95</td>
+								<td>Төрага</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Кырбашева Тахмина</td>
+								<td>Мугалим</td>
+								<td>Ленина 252 /3</td>
+								<td>Төраганын орун басары</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Кенжешова Венера</td>
+								<td>Бугхалтер</td>
+								<td>Арпа 3</td>
+								<td>Мүчөсү</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Назарова Аида</td>
+								<td>Иштебейт</td>
+								<td>Кызыл Сарай</td>
+								<td>Мүчөсү</td>
+							</tr>
+						</table>
 					</div>
 				</section>
 			</div>
@@ -276,9 +227,12 @@
 			<!-- /.footer -->
 		</div>
 
+		<!-- script -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-		<script src="assets/js/slider.js"></script>
+		<script src="assets/js/plugin/jquery.fancybox.min.js"></script>
 		<script src="assets/js/script.js"></script>
+		<script src="assets/js/slider.js"></script>
+		<script src="assets/js/dynamicAdapt.js"></script>
 	</body>
 </html>

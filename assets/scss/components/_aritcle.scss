@@ -30,6 +30,32 @@
 			margin: 8px 0 8px 15px;
 		}
 	}
+	&__list {
+		font-size: 18px;
+		margin: 8px 0 8px 60px;
+		@include breakpoint(medium) {
+			margin: 8px 0 8px 40px;
+		}
+		li {
+			list-style-type: circle;
+		}
+	}
+	&__table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+
+		td,
+		th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+	}
 	&__imglist {
 		display: flex;
 		flex-wrap: wrap;
@@ -38,6 +64,16 @@
 		a {
 			width: calc(25% - 16px);
 			margin: 8px;
+
+			@include breakpoint(medium) {
+				width: 150px;
+			}
+
+			img {
+				width: 200px;
+				height: 130px;
+				object-fit: cover;
+			}
 		}
 	}
 }
